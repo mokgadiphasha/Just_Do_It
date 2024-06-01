@@ -1,25 +1,25 @@
- name: Java CI/CD
+name: Java CI/CD
 
- on:
-    push:
-   	 branches:
-   	  - main
- jobs:
-   build:
-     runs-on: ubuntu-latest
-     
-     
-     steps:
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Checkout Repository
-      	uses: actions/checkout@v2
-      	
+        uses: actions/checkout@v2
+
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
           java-version: '17'
-          
+
       - name: Build with Maven
         run: mvn -B clean package
-        
+
       - name: Run Tests
         run: mvn test
