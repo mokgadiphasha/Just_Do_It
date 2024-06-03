@@ -43,6 +43,7 @@ public class Application {
                             " again soon, bye ^_^!");
                     mediatorClass.getTaskManager()
                             .shutDownScheduledService();
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("* Incorrect input. Please use 'help' " +
