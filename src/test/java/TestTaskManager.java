@@ -42,7 +42,7 @@ public class TestTaskManager {
         Task updatedTask = taskManager.listAllTasks().get(0);
 
         assertEquals(id,updatedTask.getId().toString());
-        assertEquals(taskFromList.getDueDate(),task.getDueDate());
+        assertEquals(taskFromList.getDateCreated(),task.getDateCreated());
         assertNotEquals(taskFromList.getDescription(),task.getDescription());
         assertNotEquals(taskFromList.getTitle(),task.getTitle());
         assertNotEquals(taskFromList.getPriority(),task.getPriority());

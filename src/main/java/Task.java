@@ -7,14 +7,14 @@ import java.util.UUID;
 public class Task {
     private String description;
     private Priority priority;
-    private LocalDate dueDate;
+    private LocalDate dateCreated;
     private String title;
     private UUID id;
 
 
     public Task(String description, String title ,
-                Priority priority, LocalDate dueDate){
-        this.dueDate = dueDate;
+                Priority priority, LocalDate dateCreated){
+        this.dateCreated = dateCreated;
         this.description = description;
         this.priority = priority;
         this.title = title;
@@ -27,7 +27,7 @@ public class Task {
                 "\nTitle: " + getTitle()+
                 "\nDescription: "+getDescription()+
                 "\nPriority: " + getPriority().toString()+
-                "\nDue date: " + getDueDate()+ "}";
+                "\nDue date: " + getDateCreated()+ "}";
     }
 
     public UUID getId() {
@@ -63,11 +63,11 @@ public class Task {
         this.title = title;
     }
 
-    public LocalDate getDueDate() {
-        return dueDate;
+    public LocalDate getDateCreated() {
+        return dateCreated;
     }
 
-    public void setDueDate(LocalDate dueDate) {
-        this.dueDate = dueDate;
+    public void setDateCreated(LocalDate dateCreated) {
+        this.dateCreated = dateCreated;
     }
 }

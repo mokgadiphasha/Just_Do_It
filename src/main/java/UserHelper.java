@@ -10,11 +10,11 @@ public class UserHelper {
     public String help(){
         return "You can do the following: \n" +
         "* Add tasks by entering 'add task'.\n"+
-        "* Updating task by entering 'update task'\n"+
-        "* Delete task by entering 'delete task'\n"+
+        "* Updating task by entering 'update task'.\n"+
+        "* Delete task by entering 'delete task'.\n"+
         "* View all tasks by entering 'view all tasks'\n" +
-        "* View tasks by priority by entering 'filter by priority'\n" +
-        "* View tasks by due date by entering 'filter by due date'\n" +
+        "* View tasks by priority(From High to Low) by entering 'filter by priority'.\n" +
+        "* View tasks by date created by entering 'filter by date created'.\n" +
         "* You can exit the program by entering 'Exit'.\n";
     }
 }

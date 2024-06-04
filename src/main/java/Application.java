@@ -35,8 +35,8 @@ public class Application {
                 case "filter by priority":
                     mediatorClass.getTasksFilteredByPriority();
                     break;
-                case "filter by due date":
-                    mediatorClass.getTasksFilteredByDueDate();
+                case "filter by date created":
+                    mediatorClass.getTasksFilteredByDateCreated();
                     break;
                 case "Exit":
                     System.out.println("* We hope to see you" +

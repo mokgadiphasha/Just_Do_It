@@ -6,13 +6,10 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import java.io.File;
 import java.io.IOException;
-import java.security.PublicKey;
-import java.time.LocalDate;
 import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
 /**
  * I am a TaskManager class, I perform actions on tasks.
@@ -45,7 +42,7 @@ public class TaskManager {
 
         if(optionalTask.isPresent()){
             Task oldTask = optionalTask.get();
-            updatedTask.setDueDate(oldTask.getDueDate());
+            updatedTask.setDateCreated(oldTask.getDateCreated());
             updatedTask.setId(oldTask.getId());
             tasks.remove(oldTask);
             tasks.add(updatedTask);
@@ -94,9 +91,9 @@ public class TaskManager {
     }
 
 
-    public List<Task> getTaskByDueDate(){
+    public List<Task> getTaskByDateCreated(){
         return tasks.stream().sorted(Comparator
-                .comparing(Task::getDueDate)).toList();
+                .comparing(Task::getDateCreated)).toList();
     }
 
 
@@ -104,7 +101,7 @@ public class TaskManager {
 
         Runnable task = this::saveTasksToFile;
         scheduledService.scheduleAtFixedRate(task,
-                5,5, TimeUnit.MINUTES);
+                3,3, TimeUnit.MINUTES);
     }
 
 

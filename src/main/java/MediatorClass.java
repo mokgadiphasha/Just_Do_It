@@ -88,8 +88,8 @@ public class MediatorClass {
     }
 
 
-    public void getTasksFilteredByDueDate(){
-        List<Task> tasks = taskManager.getTaskByDueDate();
+    public void getTasksFilteredByDateCreated(){
+        List<Task> tasks = taskManager.getTaskByDateCreated();
 
         if(!tasks.isEmpty()){
             for (Task task : tasks){
@@ -103,6 +103,7 @@ public class MediatorClass {
 
     public void getAllTasks(){
         List<Task> tasks = taskManager.listAllTasks();
+        System.out.println("\n");
 
         if(!tasks.isEmpty()){
             for (Task task: tasks){
