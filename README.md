@@ -14,7 +14,7 @@ editing, deletion, and prioritization features and periodically stores these tas
 To install and set up this project locally, follow these steps:
 
 1. **Clone the repository:**
-   - In your terminal ,git clone git@github.com:your-username/Just_Do_It.git .
+   - git clone git@github.com:your-username/Just_Do_It.git .
    - cd Just_Do_It
 
 2.  **Build the project using Maven:**
@@ -28,8 +28,8 @@ To install and set up this project locally, follow these steps:
 
 If you have any questions or feedback, feel free to reach out:
 
-**Name:** Mokgadi Pasha
-**Email:** phashamokgadi631@gmail.com
-**GitHub:** [mokgadipasha](https://github.com/mokgadipasha)
+**Name:**  Mokgadi Pasha
+**Email:**  phashamokgadi631@gmail.com
+**GitHub:**  [mokgadipasha](https://github.com/mokgadiphasha)
 
 
